@@ -1,0 +1,14 @@
+<ul>
+	{{#if donation_list}}
+	{{#each donation_list}}
+	<li><a href={{url}}>{{name}}</a>
+		<a href="{{url}}/update">Edit Donation Entry Information</a>
+	</li>
+	{{/each}}
+	{{else}}
+		<h2>
+			No Donation Entries Found
+		</h2>
+	{{/if}}
+</ul>
+<input type="button" value="Create New Donation Entry" class="btn-info" onclick="window.location.href='/users/donation/create'">

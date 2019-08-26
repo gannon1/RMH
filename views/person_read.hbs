@@ -1,0 +1,19 @@
+<p>First Name: {{person.firstName}}</p>
+<p>Last Name: {{person.lastName}}</p>
+<p>Cell Phone: {{person.cellPhone}}</p>
+<p>Home Phone: {{person.homePhone}}</p>
+<p>Home Address: {{person.homeAddress}}</p>
+<p>City: {{person.city}}</p>
+<p>State: {{person.state}}</p>
+<p>Zip Code: {{person.zipCode}}</p>
+<p>Emergency Contact: {{person.emergencyContact}}</p>
+<p>Emergency Contact Phone Number: {{person.emergencyContactPhoneNumber}}</p>
+
+<input type="button" value="Edit Details" class="btn-info" onclick="window.location.href='{{person.url}}/update'">
+<input type="button" value="Delete" class="btn-info" onclick="window.location.href='{{person.url}}/delete'">
+<input type="button" value="New Registration" class="btn-info" onclick="window.location.href='admin/registration/{{person._id}}/create'">
+<br>
+<br>
+<input type="button" value="Return to List" class="btn-info" onclick="window.location.href='/admin/Person'">
+
+{{registration_list}}
